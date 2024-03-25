@@ -6,6 +6,16 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: #d8eefe;
+        display: flex;
+        justify-content: center;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 280px;
+        flex-grow: 1;
       }
       .banner-image {
         width: 128px;
@@ -19,43 +29,73 @@
         border-radius: 48px;
         object-fit: cover;
       }
+      .name {
+        color: #094067;
+        display: flex;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons a {
+        color: #3da9fc;
+        text-decoration: none;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .link {
+        background-color:#90b4ce;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .link a {
+        color: #094067;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
     </style>
   </head>
 <body>
-  <h1>My link in bio</h1>
-  <div class="banner">
-    <img alt="A headshot of Nathan G" src="/thumbnails/Nathan-G.png" class="banner-image">
+  <div class="items">
+    <h1 class="name">My link in bio</h1>
+    <div class="banner">
+      <img alt="A headshot of Nathan G" src="/thumbnails/Nathan-G.png" class="banner-image">
+    </div>
+
+    <div class="name">
+      Nathan G
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/NathanKG8" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/nathan-gibes/" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/nathangibes/" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://www.facebook.com/nathan.gibes/" target="_blank">
+        Facebook
+      </a>
+    </div>
+
+    <div class="link">
+      <img
+        alt="A thumbnail of a gear" src="thumbnails/Gear-icon-transparent-background.png" class="thumbnail">
+
+      <a target="_blank" href="https://www.wikipedia.org/">Wikipedia
+        — Many contributors</a>
+    </div>
   </div>
-
-  <div class="name">
-    Nathan G
-  </div>
-
-  <div class="social-icons">
-    <a href="https://github.com/NathanKG8" target="_blank">
-      GitHub
-    </a>
-
-    <a href="https://www.linkedin.com/in/nathan-gibes/" target="_blank">
-      LinkedIn
-    </a>
-
-    <a href="https://www.instagram.com/nathangibes/" target="_blank">
-      Instagram
-    </a>
-
-    <a href="https://www.facebook.com/nathan.gibes/" target="_blank">
-      Facebook
-    </a>
-  </div>
-
-  <div class="link">
-    <img
-      alt="A thumbnail of a gear" src="thumbnails/Gear-icon-transparent-background.png" class="thumbnail">
-
-    <a target="_blank" href="https://www.wikipedia.org/">Wikipedia
-      — Many contributors</a>
-  </div>
-
 </body>
 </html>
